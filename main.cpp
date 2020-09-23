@@ -106,7 +106,7 @@ class Matrix {
 		}
 		b[index] *= scale;
 	}
-	//solves Ax = b returning true if such an x exists or false if not
+	//solves Ax = b returning true iff a unique x exists
 	bool solveAxb(Vector<S>& x, Vector<S> b) {
 		for(int r = 0; r < S; r++) {
 			if(data[r][r] == 0) {
